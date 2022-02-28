@@ -34,10 +34,6 @@
         <enabled>true</enabled>
     </classAccesses>
     <custom>false</custom>
-    <externalDataSourceAccesses>
-        <enabled>false</enabled>
-        <externalDataSource>Twitter</externalDataSource>
-    </externalDataSourceAccesses>
     <fieldPermissions>
         <editable>true</editable>
         <field>Tweet__c.Created_At__c</field>
@@ -80,16 +76,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Twitter_Callout_Settings__mdt.Consumer_Key__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Twitter_Callout_Settings__mdt.Consumer_Secret__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Twitter_Callout_Settings__mdt.Endpoint__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -98,9 +84,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Twitter_Callout_Settings__mdt-Twitter Callout Setting Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Twitter_User__c-Twitter User Layout</layout>
     </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
@@ -111,21 +94,8 @@
         <object>Tweet__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Twitter_User__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
     <tabVisibilities>
         <tab>Tweet__c</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Twitter_User__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <userLicense>Salesforce</userLicense>

@@ -49,7 +49,7 @@
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartSummary>
-                    <aggregate>Sum</aggregate>
+                    <aggregate>Average</aggregate>
                     <axisBinding>y</axisBinding>
                     <column>Tweet__c.Engagement_Actions__c</column>
                 </chartSummary>
@@ -57,12 +57,12 @@
                 <componentType>Gauge</componentType>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
-                <gaugeMax>6500.0</gaugeMax>
+                <gaugeMax>100.0</gaugeMax>
                 <gaugeMin>0.0</gaugeMin>
                 <groupingSortProperties/>
                 <header>User Engagement</header>
-                <indicatorBreakpoint1>2166.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>4333.0</indicatorBreakpoint2>
+                <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
