@@ -23,7 +23,6 @@
     <navType>Standard</navType>
     <tabs>standard-home</tabs>
     <tabs>Tweet__c</tabs>
-    <tabs>Twitter_User__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Twitter_Integration_UtilityBar</utilityBar>
 </CustomApplication>
