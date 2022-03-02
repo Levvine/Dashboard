@@ -28,8 +28,9 @@ public class TwitterUser {
         public String newest_id;	//1497120411334877184
         public Integer result_count;	//10
         public String next_token;	//7140dibdnow9c7btw3z4kclrcpouo10r3t02vlmrsj777
-    }
-    public static TwitterUser parse(){
+    }   
+    
+    public static TwitterUser refresh(){
         Twitter_Callout_Settings__mdt WiproTwitterCallout = [Select Bearer_Token__c, Endpoint__c FROM Twitter_Callout_Settings__mdt LIMIT 1][0];
         String bearerToken = WiproTwitterCallout.Bearer_Token__c;
         String endpoint = WiproTwitterCallout.Endpoint__c;

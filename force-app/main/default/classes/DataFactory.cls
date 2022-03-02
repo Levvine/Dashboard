@@ -1,7 +1,8 @@
 public class DataFactory {
     
+    @AuraEnabled
     public static void generate() {
-        TwitterUser tu = TwitterUser.parse();
+        TwitterUser tu = TwitterUser.refresh();
         List<Tweet__c> tweets = new List<Tweet__c>();
         for(TwitterUser.cls_data data:tu.data){
             Tweet__c tweet = new Tweet__c();
@@ -13,8 +14,13 @@ public class DataFactory {
             tweet.Created_At__c = datetime.valueOf(data.created_at);
             tweets.add(tweet);
         }
+        DataFactory.clear();
         upsert tweets Tweet_Id__c;
-        
+    }
+    
+    public static void clear() {
+        List<Tweet__c> tweets = [SELECT Id FROM Tweet__c];
+        delete tweets;
     }
     
 }

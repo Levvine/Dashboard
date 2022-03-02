@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>(Tweet__c.Likes__c:SUM + Tweet__c.Reply_Count__c:SUM + Tweet__c.Retweet_Count__c:SUM) / RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Sum of replies, retweets, and likes</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Engagement Actions</masterLabel>
+        <scale>2</scale>
+    </aggregates>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>Tweet__c.Reply_Count__c</field>
@@ -11,10 +21,6 @@
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>Tweet__c.Likes__c</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Average</aggregateTypes>
-        <field>Tweet__c.Engagement_Actions__c</field>
     </columns>
     <format>Summary</format>
     <groupingsDown>

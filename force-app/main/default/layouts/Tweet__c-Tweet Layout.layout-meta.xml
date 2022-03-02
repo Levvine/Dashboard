@@ -30,10 +30,6 @@
                 <behavior>Edit</behavior>
                 <field>Created_At__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Engagement_Actions__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

@@ -12,7 +12,9 @@ package.xml
 **/__tests__/**
 
 # API Key
-**/customMetadata/Twitter_Callout_Settings.Wipro_Tweets_Twitter_Callout.md-meta.xml
+# **/customMetadata/Twitter_Callout_Settings.Wipro_Tweets_Twitter_Callout.*
+**/objects/Twitter_Callout_Settings__mdt/fields/Bearer_Token__c.*
+**/objects/Twitter_Callout_Settings__mdt/fields/Endpoint__c.*
 
 # Profiles
 **/Profiles
